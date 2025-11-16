@@ -1,10 +1,23 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Marcellus } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const geistSans = Geist({ 
+  subsets: ["latin"],
+  variable: '--font-sans',
+});
+
+const geistMono = Geist_Mono({ 
+  subsets: ["latin"],
+  variable: '--font-mono',
+});
+
+const marcellus = Marcellus({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-heading',
+});
 
 export const metadata: Metadata = {
   title: 'Immigration Services Cabo San Lucas | Temporary & Permanent Residency',
@@ -44,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${geistSans.variable} ${marcellus.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

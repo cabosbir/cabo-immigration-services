@@ -74,9 +74,16 @@
   * {
     border-color: hsl(var(--border));
   }
+  
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
+    @apply font-sans;
+  }
+
+  /* Use elegant Marcellus font for all headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
   }
 }
 

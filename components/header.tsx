@@ -21,11 +21,13 @@ export function Header({ onStartApplication }: HeaderProps) {
     <header className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground font-bold">
-              IC
-            </div>
-            <span className="font-bold text-lg hidden sm:inline">ImmigrateCabo</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://res.cloudinary.com/dgixosra8/image/upload/v1763260298/Edg_3_fdbyxd.png" 
+              alt="Cabo Immigration Services" 
+              className="h-10 w-auto"
+            />
+            <span className="font-bold text-lg hidden sm:inline">Cabo Immigration Services</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">

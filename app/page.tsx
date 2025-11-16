@@ -1,15 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { Header } from '@/components/header';
-import { HeroSection } from '@/components/hero-section';
-import { ServicesSection } from '@/components/services-section';
-import { HowItWorksSection } from '@/components/how-it-works-section';
-import { ImmigrationFormWizard } from '@/components/immigration-form-wizard';
-import { TrustSection } from '@/components/trust-section';
-import { FAQSection } from '@/components/faq-section';
-import { FinalCTASection } from '@/components/final-cta-section';
-import { Footer } from '@/components/footer';
+import { Header } from '../components/header';
+import { HeroSection } from '../components/hero-section';
+import { ServicesSection } from '../components/services-section';
+import { HowItWorksSection } from '../components/how-it-works-section';
+import { ImmigrationFormWizard } from '../components/immigration-form-wizard';
+import { TrustSection } from '../components/trust-section';
+import { FAQSection } from '../components/faq-section';
+import { FinalCTASection } from '../components/final-cta-section';
+import { Footer } from '../components/footer';
 
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
